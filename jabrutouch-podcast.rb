@@ -7,7 +7,7 @@ PAGES_IN_SHAS = 2711
 STARTED_AT = Date.parse('3 August 2012')
 DATE_FORMAT = "%a, %d %b %Y 09:00:00 -0500"
 
-get '/podcast.xml' do
+get '/jabrutouch.xml' do
   content_type 'text/xml'
   xml = Nokogiri::XML(open('http://www.dafyomipodcast.com/Dafyomi_Espanol.xml').read)
   # rename feed
