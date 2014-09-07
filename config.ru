@@ -1,3 +1,3 @@
-require './jabrutouch-podcast'
+require './jabrutouch'
 
 run Sinatra::Application
