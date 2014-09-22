@@ -9,7 +9,7 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:d
     xml.pubDate @now.strftime(DATE_FORMAT)
     xml.docs "http://blogs.law.harvard.edu/tech/rss"
     xml.tag! "itunes:explicit", "No"
-    xml.tag! "itunes:image", nil, href: "http://jabrutouch-podcast.herokuapp.com/logo-jabrutouch.png"
+    xml.tag! "itunes:image", nil, href: "http://jabrutouch.herokuapp.com/logo-jabrutouch.png"
     xml.tag! "itunes:category", text: "Religion &amp; Spirituality" do
       xml.tag! "itunes:category", nil, text: "Judaism"
     end
