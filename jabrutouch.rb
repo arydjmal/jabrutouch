@@ -19,7 +19,7 @@ end
 
 get '/podcast.xml' do
   @now = Date.today
-  @items = (0...30).map {|days_ago| get_daf(@now-days_ago)}
+  @items = (-1...30).map {|days_ago| get_daf(@now-days_ago)}
   builder :podcast
 end
 
